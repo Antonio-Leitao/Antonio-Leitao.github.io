@@ -1,0 +1,20 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: black;
+  background: radial-gradient(#ffffff, #eaf4fb);
+  /* background: linear-gradient(315deg, #ffffff, #eaf4fb); */
+  --clr-blue: #2274a5;
+  --clr-white: #ffffff;
+  --clr-dark: #474747;
+  --clr-wine: #e01563;
+  --clr-gray: #cccccc;
+  --clr-orange: #f96d15;
+  --clr-drkorange: #e05a06;
+  margin: 0;
+  padding: 0;
+}

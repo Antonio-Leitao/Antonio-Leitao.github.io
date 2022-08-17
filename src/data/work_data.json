@@ -1,0 +1,40 @@
+{
+  "work":[
+    {
+      "type": "publication",
+      "title": "Topological Expressive Power of Neural Networks",
+      "authors": "António Leitão, Giovanni Petri",
+      "abstract": "We propose a topological description of neural network expressive power. We adopt the topology of the space of decision boundaries realized by a neural architecture as a measure of its intrinsic expressive power. By sampling a large number of neural architectures with different sizes and design, we show how such measure of expressive power depends on the properties of the architectures, like depth, width and other related quantities.",
+      "link":"https://openreview.net/pdf?id=I44kJPuvqPD",
+      "tags":["Topological Data Analysis","Machine Learning","Neural Networks"]
+    },
+    {
+      "type":"code",
+      "title": "udpih",
+      "description": "Uniform Distributed Persistent homology (UDiPH) is a package that creates a new metric space where the points are uniformly sampled with respect to a global metric. It is oriented for creating Vietoris-Rips filtrations that are independent of the metric of the initial space. ",
+      "link":"https://github.com/Antonio-Leitao/udiph",
+      "tags":["python"]
+    },
+    {
+      "type":"code",
+      "title": "dbsampler",
+      "description": "DBSampler is a package to sample points in the decision boundary of classification problems (binary or multiclass). It is theorically exact and efficient for very high dimensions.",
+      "link":"https://github.com/Antonio-Leitao/dbsampler",
+      "tags":["python"]
+    },
+    {
+      "type":"publication",
+      "title": "Topological Complexity of Decision Boundaries",
+      "authors": "António Leitão, Giovanni Petri",
+      "abstract": "Complex data requires complex models, or so the saying goes. However, the reason why classifying two concentric circles is challenging is not because they are circles, but because they are concentric. Our contribution aims at shifting the focus from data-driven to task-oriented models. To this aim, we study the topology of the decision boundary of a classification problem as a measure of its intrinsic complexity. We employ a topological approach to understand how the architecture of a model can limit its topological expressiveness and how complex data might not equate with difficult classification problems.",
+      "link":"https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Universit%C3%A0/Pearson-SIS-2020-atti-convegno.pdf#%5B%7B%22num%22%3A6055%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C0%2C883%2Cnull%5D",
+      "tags":["Topological Data Analysis","Machine Learning","Neural Networks"]
+    },
+    {
+      "type":"web",
+      "title": "Personal Website",
+      "description": "Complex data requires complex models, or so the saying goes. However, the reason why classifying two concentric circles is challenging is not because they are circles, but because they are concentric. Our contribution aims at shifting the focus from data-driven to task-oriented models. To this aim, we study the topology of the decision boundary of a classification problem as a measure of its intrinsic complexity. We employ a topological approach to understand how the architecture of a model can limit its topological expressiveness and how complex data might not equate with difficult classification problems.",
+      "link":"https://antonio-leitao.github.io/",
+      "tags":["html","css","javascript", "svelte"]
+    }
+]}
