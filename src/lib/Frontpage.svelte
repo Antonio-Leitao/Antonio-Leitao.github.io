@@ -1,7 +1,7 @@
 <div class="parent">
   <div id="image01" class="image">
     <span class="frame">
-      <img class="fancy" src="images/avatar_leitao.png" alt="António Leitão" />
+      <img class="fancy" src="static/avatar_leitao.png" alt="António Leitão" />
     </span>
   </div>
   <h1 id="name">António Leitão</h1>
