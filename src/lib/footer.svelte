@@ -6,10 +6,10 @@
 <div class="parent">
   <div class="divider1" />
   <div class="button-row" id="footer">
-    <Social name="Twitter" --socialcolor=#1da1f2> </Social>
-    <Social name="Github" --socialcolor=#333333> </Social>
-    <Social name="Email" --socialcolor=#e4405f> </Social>
-    <Social name="Vitae" --socialcolor=var(--clr-wine)> </Social>
+    <Social name="Twitter" url="https://twitter.com/leitalhao" --socialcolor=#1da1f2> </Social>
+    <Social name="Github" url="https://github.com/Antonio-Leitao" --socialcolor=#333333> </Social>
+    <Social name="Email" url="mailto:antonio.leitao@centai.eu" --socialcolor=#e4405f> </Social>
+    <Social name="Vitae" url="public/static/Antonio_Leitao_CV_updated.pdf" --socialcolor=var(--clr-wine)> </Social>
   </div>
 </div>
 

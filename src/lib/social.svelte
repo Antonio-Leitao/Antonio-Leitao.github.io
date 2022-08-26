@@ -1,8 +1,8 @@
 
 <script>
     export let name;
+    export let url;
     let classname;
-    import Icon from "./Icon.svelte";
 
     switch(name) {
     case "Email":
@@ -22,7 +22,9 @@
     <!-- <span class="tooltip">{name}</span>
     <span> <Icon name={name.toLowerCase()} color={"lightslategray"} size={"1.4x"}/></span> -->
         <span class="tooltip">{name}</span>
-        <span><i class={classname}></i></span>
+        <a href={url} target="_blank">
+          <span><i class={classname}></i></span>
+        </a>
   </div>
 
 <style>
@@ -91,4 +93,6 @@
     background: var(--socialcolor, #1da1f2);
     color: #ffffff;
   }
+
+  a { color: inherit; } 
 </style>
