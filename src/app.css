@@ -1,20 +1,77 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-  color-scheme: light dark;
-  color: black;
-  background: radial-gradient(#ffffff, #eaf4fb);
-  /* background: linear-gradient(315deg, #ffffff, #eaf4fb); */
-  --clr-blue: #2274a5;
-  --clr-white: #ffffff;
-  --clr-dark: #474747;
-  --clr-wine: #e01563;
-  --clr-gray: #cccccc;
-  --clr-orange: #f96d15;
-  --clr-drkorange: #e05a06;
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #efeff0;
+  --lvl1: #fff;
+  --neutral: rgb(10, 10, 10);
+  --shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 2px 3px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
+}
+
+/* :roo.dark{ */
+:root {
+  --bg: #000;
+  --lvl1: rgb(13, 17, 23);
+  --shadow: 10px 10px 8px #00000088;
+
+  --text1: rgb(240, 242, 244);
+  --text2:rgb(134, 143, 151);
+}
+
+.glass {
+  background-color: rgba(10, 10, 10, 0.01);
+  box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
+  color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  background-blend-mode: overlay;
+  border: rgba(10, 10, 10, 1) 1px solid;
+}
+
+.title {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--text1);
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text1);
+  font-family: 'Libre Baskerville', serif;
+  /* color: var(--clr-foreground-deep); */
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.abstract {
+  font-family: "Roboto", sans-serif;
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: var(--text2);
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.displaytitle {
+  position: relative;
+  margin-top: 1.3rem;
+  font-family: 'Libre Baskerville', serif;
+  color: var(--text1);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
