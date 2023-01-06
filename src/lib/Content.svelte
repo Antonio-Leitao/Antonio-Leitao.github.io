@@ -1,29 +1,23 @@
 <script>
   import Projects from "./Projects.svelte";
   import Hero from "./Hero.svelte";
-  import About from "./About.svelte";
-  import Workflow from "./Workflow.svelte"
+  import Research from "./Research.svelte";
 </script>
 
-
 <div class="layout">
-  <div class="sidebar"></div>
+  <div class="sidebar" />
   <div class="main">
     <section id="hero">
-      <Hero/>
+      <Hero />
     </section>
-    <section id="about">
-      <About/>
+    <section id="research">
+      <Research />
     </section>
     <section id="projects">
-      <Projects/>
+      <Projects />
     </section>
-    <section id="workflow">
-      <Projects/>
-    </section>
-    
   </div>
-  <div class="sidebar"></div>
+  <div class="sidebar" />
 </div>
 
 <style>

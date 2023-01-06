@@ -20,9 +20,10 @@
   --bg: #000;
   --lvl1: rgb(13, 17, 23);
   --shadow: 10px 10px 8px #00000088;
-
+  --ash: #efeff0;
   --text1: rgb(240, 242, 244);
-  --text2:rgb(134, 143, 151);
+  --text2: rgb(134, 143, 151);
+  --text3: rgb(74, 80, 87);
 }
 
 .glass {
@@ -35,7 +36,7 @@
 }
 
 .title {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   color: var(--text1);
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -44,7 +45,7 @@
 
 .subtitle {
   color: var(--text1);
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   /* color: var(--clr-foreground-deep); */
   font-size: 0.8rem;
   font-weight: 700;
@@ -67,7 +68,7 @@
 .displaytitle {
   position: relative;
   margin-top: 1.3rem;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   color: var(--text1);
   font-size: 1.8rem;
   font-weight: 800;

@@ -14,14 +14,15 @@
   });
 
   $: containerTop = viewportPosition * ratio;
-  $: console.log(centerpieceHeight)
+  $: console.log(totalPageHeight);
+  $: console.log(containerTop);
 </script>
 
 <svelte:window bind:scrollY={viewportPosition} />
 
 <div
   class="wrapper"
-  style="top:{-containerTop}px"
+  style="top:-{viewportPosition * 0.5}px;"
   bind:clientHeight={centerpieceHeight}
 >
   <div class="container">

@@ -3,7 +3,7 @@
   import Centerpiece from "./lib/Centerpiece.svelte";
   import Header from "./lib/Header.svelte";
   import Navbar from "./lib/Navbar.svelte";
-
+  import Footer from "./lib/Footer.svelte";
 </script>
 
 <!-- Background -->
@@ -20,9 +20,10 @@
 </div>
 
 <!-- Footer -->
+<Footer />
+
 <style>
   .content {
-    height: 100vh;
     z-index: 0;
   }
 </style>

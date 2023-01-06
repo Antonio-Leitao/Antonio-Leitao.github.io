@@ -10,7 +10,10 @@
 
 <div class="glass header">
   <div class="navbar">
-    <div class="sides"><div class="name">António</div> <div class="name" style="font-weight:700"> Leitão</div></div>
+    <div class="sides">
+      <div class="name">António</div>
+      <div class="name" style="font-weight:700">Leitão</div>
+    </div>
 
     <div class="center" />
 
@@ -20,17 +23,13 @@
       </li>
       <li>•</li>
       <li>
-        <a href="#about" on:click|preventDefault={scrollIntoView}>About</a>
-      </li>
-      <li>•</li>
-      <li>
         <a href="#projects" on:click|preventDefault={scrollIntoView}
           >Projects
         </a>
       </li>
       <li>•</li>
       <li>
-        <a href="#workflow" on:click|preventDefault={scrollIntoView}>Workflow</a
+        <a href="#research" on:click|preventDefault={scrollIntoView}>Research</a
         >
       </li>
     </ul>
@@ -56,12 +55,12 @@
   }
   .sides {
     flex: 1;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .header {
     line-height: 56px;
@@ -98,7 +97,7 @@
     left: 0;
   }
 
-  .name{
+  .name {
     color: var(--text1);
     text-transform: uppercase;
     text-decoration: none;
@@ -107,6 +106,5 @@
 
     display: inline-block;
     padding-left: 0.5rem;
-
   }
 </style>

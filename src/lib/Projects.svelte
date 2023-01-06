@@ -5,12 +5,12 @@
 
   let projects = [
     {
-      name: "JET",
+      name: "Jet",
       abstract:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus expedita ipsum dignissimos exercitationem provident est animi omnis!",
     },
     {
-      name: "Heron",
+      name: "Portuguese Iconography",
       abstract:
         "Repellendus sapiente aliquid eum totam beatae. Cupiditate neque quod obcaecati dolor laboriosam.",
     },
@@ -20,22 +20,56 @@
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus expedita ipsum dignissimos exercitationem provident est animi omnis!",
     },
     {
-      name: "Adamastor",
+      name: "Component Library",
       abstract:
         "Repellendus sapiente aliquid eum totam beatae. Cupiditate neque quod obcaecati dolor laboriosam.",
     },
     {
-      name: "Portuguese Iconography",
+      name: "Heron",
+      abstract:
+        "Repellendus sapiente aliquid eum totam beatae. Cupiditate neque quod obcaecati dolor laboriosam.",
+    },
+    {
+      name: "DB Sampler",
       abstract:
         "Repellendus sapiente aliquid eum totam beatae. Cupiditate neque quod obcaecati dolor laboriosam.",
     },
   ];
 </script>
 
-<ScrollComponent threshold={0.2}>
-  {#each projects as { name, abstract }, i}
-    <div in:fly="{{ x: -100, duration: 800, delay:i*300 }}" >
-      <Project {name} {abstract} />
+<div class="projects-section">
+  <div class="text">
+    <div class="title">Projects</div>
+    <div class="abstract">
+      List of projects that I have started and activelly maintain.
     </div>
-  {/each}
-</ScrollComponent>
+  </div>
+
+  <div class="projects">
+    {#each projects as { name, abstract }, i}
+      <Project {name} {abstract} />
+    {/each}
+  </div>
+</div>
+
+<style>
+  .projects-section {
+    margin-top: 5rem;
+  }
+  .title {
+    font-weight: 800;
+  }
+  .abstract {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: var(--text2);
+  }
+  .text {
+    text-align: center;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+</style>
