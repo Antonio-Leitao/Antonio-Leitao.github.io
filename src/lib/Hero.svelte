@@ -3,6 +3,8 @@
   import { onMount } from "svelte";
   import { scale } from "svelte/transition";
   import { quintOut } from "svelte/easing";
+  import Social from "./Social.svelte";
+  import { Github, Twitter, Mail } from "lucide-svelte";
 
   function getLeft(angle, radius = 55) {
     const x = radius * Math.cos((angle * Math.PI) / 180);
@@ -32,7 +34,9 @@
         in:scale={{ duration: 700, opacity: 0, start: 1.4, easing: quintOut }}
         style="top:{getTop(-180)}; left:{getLeft(-180)}"
       >
-        Github
+        <Social label="aleitao@novaims.unl.pt" color="#CD201F">
+          <Mail color="rgb(13, 17, 23)" />
+        </Social>
       </div>
       <div
         class="circle"
@@ -45,7 +49,9 @@
         }}
         style="top:{getTop(165)}; left:{getLeft(165)}"
       >
-        Twitter
+        <Social label="Twitter" color="#1DA1F2">
+          <Twitter color="rgb(13, 17, 23)" />
+        </Social>
       </div>
       <div
         class="circle"
@@ -58,7 +64,9 @@
         }}
         style="top:{getTop(150)}; left:{getLeft(150)}"
       >
-        E-mail
+        <Social label="Github" color="#333333">
+          <Github color="rgb(13, 17, 23)" />
+        </Social>
       </div>
 
       <svg
@@ -98,6 +106,7 @@
 
     <div
       class="text"
+      style="opacity:{1 - scroll / 500}"
       in:scale={{
         duration: 700,
         delay: 200,
@@ -142,14 +151,8 @@
     position: absolute;
     display: grid;
     place-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: var(--text1);
     transform: translate(-50%, -50%);
-  }
-  .circle:hover {
-    background-color: blue;
+    z-index: 2;
   }
   img {
     width: 45vw;

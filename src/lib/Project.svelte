@@ -1,14 +1,15 @@
 <script>
   export let name;
+  export let url;
+  export let tech;
   export let abstract;
-  export let type = "python • rust";
 </script>
 
 <div class="card glass">
   <div class="front" />
   <div class="back" />
   <div class="inner">
-    <div class="date">{type}</div>
+    <div class="date">{tech}</div>
     <div class="title">
       {name}
     </div>

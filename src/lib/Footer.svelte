@@ -8,14 +8,26 @@
   <div class="about">
     <div class="subtitle">About</div>
     <p class="abstract">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo, vero
-      hic libero voluptatibus itaque nisi. Alias quidem, natus voluptate
-      molestias ullam vitae sint quas, repellat quibusdam, dicta nisi officiis.
+      I'm a mathematician focused on appplied algebraic topology, topological
+      data analysis and machine learning. I'm am however involved in multiple
+      projects from NLP to Neuroscience. I have a passion for good aesthetics
+      and frontend development.
     </p>
   </div>
   <div class="icons">
-    <div class="circle"><Github color="#4A5057" strokeWidth={1} /></div>
-    <div class="circle"><Twitter color="#4A5057" strokeWidth={1} /></div>
+    <div
+      on:click={() =>
+        window.open("https://github.com/Antonio-Leitao", "_blank")}
+      class="circle"
+    >
+      <Github color="#4A5057" strokeWidth={1} />
+    </div>
+    <div
+      on:click={() => window.open("https://twitter.com/leitalhao", "_blank")}
+      class="circle"
+    >
+      <Twitter color="#4A5057" strokeWidth={1} />
+    </div>
     <div class="circle"><Mail color="#4A5057" strokeWidth={1} /></div>
   </div>
   <p class="abstract">António Leitão © {year}</p>

@@ -23,13 +23,13 @@
       </li>
       <li>•</li>
       <li>
-        <a href="#projects" on:click|preventDefault={scrollIntoView}
-          >Projects
+        <a href="#research" on:click|preventDefault={scrollIntoView}
+          >Research
         </a>
       </li>
       <li>•</li>
       <li>
-        <a href="#research" on:click|preventDefault={scrollIntoView}>Research</a
+        <a href="#projects" on:click|preventDefault={scrollIntoView}>Projects</a
         >
       </li>
     </ul>
