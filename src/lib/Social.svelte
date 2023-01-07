@@ -1,9 +1,10 @@
 <script>
   export let label = "facebook";
   export let color = "#1877F2";
+  export let clickAction;
 </script>
 
-<li class="icon" style="--color:{color}">
+<li class="icon" style="--color:{color}" on:click={clickAction}>
   <span class="tooltip">{label}</span>
   <span class="logo">
     <slot />
