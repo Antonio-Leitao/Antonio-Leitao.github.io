@@ -5,23 +5,24 @@
 
 <li class="icon" style="--color:{color}">
   <span class="tooltip">{label}</span>
-  <span>
+  <span class="logo">
     <slot />
   </span>
 </li>
 
 <style>
   .icon {
-    position: relative;
-    background: #c8cacb;
-    border-radius: 50%;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
+    cursor: pointer;
     display: grid;
     place-items: center;
-    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 1rem;
+    position: relative;
+    background: #c8cacb;
+    margin: 10px;
+    font-size: 18px;
     transition: all 0.1s ease-out;
   }
 
@@ -62,5 +63,9 @@
   .icon:hover .tooltip::before {
     background: var(--color);
     color: #ffffff;
+  }
+  .logo {
+    display: grid;
+    place-items: center;
   }
 </style>

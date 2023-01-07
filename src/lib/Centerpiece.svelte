@@ -14,8 +14,6 @@
   });
 
   $: containerTop = viewportPosition * ratio;
-  $: console.log(totalPageHeight);
-  $: console.log(containerTop);
 </script>
 
 <svelte:window bind:scrollY={viewportPosition} />

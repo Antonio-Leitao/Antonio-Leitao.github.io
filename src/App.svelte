@@ -4,6 +4,7 @@
   import Header from "./lib/Header.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import Footer from "./lib/Footer.svelte";
+  import data from "./data/data.json";
 </script>
 
 <!-- Background -->
@@ -16,7 +17,7 @@
 
 <!-- Content -->
 <div class="content">
-  <Content />
+  <Content {data}/>
 </div>
 
 <!-- Footer -->

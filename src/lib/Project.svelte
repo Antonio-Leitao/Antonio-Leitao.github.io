@@ -5,7 +5,7 @@
   export let abstract;
 </script>
 
-<div class="card glass">
+<div class="card glass" on:click={() => window.open(url, "_blank")}>
   <div class="front" />
   <div class="back" />
   <div class="inner">
