@@ -137,7 +137,7 @@
           start: 1.4,
           easing: quintOut,
         }}
-        src="public/static/website_main.png"
+        src="static/website_main.png"
         alt="Illustrative Statue"
       />
     </div>
