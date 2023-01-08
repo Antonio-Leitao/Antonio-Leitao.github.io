@@ -3,9 +3,20 @@
   export let url;
   export let tech;
   export let abstract;
+  export let thumbnail;
+  import Icon from "./Icon.svelte";
 </script>
 
 <div class="card glass" on:click={() => window.open(url, "_blank")}>
+  <div class="backdrop">
+    <Icon
+      name={thumbnail}
+      color={"#c8cacb"}
+      opacity={1}
+      height={"50%"}
+      width={"50%"}
+    />
+  </div>
   <div class="front" />
   <div class="back" />
   <div class="inner">
@@ -13,6 +24,7 @@
     <div class="title">
       {name}
     </div>
+
     <div class="abstract">{abstract}</div>
   </div>
 </div>
@@ -23,6 +35,7 @@
     line-height: 0.9rem;
     opacity: 0;
     color: var(--lvl1);
+    transition-delay: 0.1s;
   }
   .inner {
     position: absolute;
@@ -35,13 +48,13 @@
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     color: var(--text1);
-    transition: color 0.4s ease-out;
+    transition: color 0.2s ease-out;
   }
   .front {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
   }
   .title {
     margin-top: 0.5rem;
@@ -74,7 +87,7 @@
     color: var(--lvl1);
     background-color: var(--text1);
     transform: translate(0, 100%);
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   .card:hover > .back {
@@ -88,5 +101,17 @@
   }
   .inner:hover > .abstract {
     opacity: 1;
+  }
+
+  .backdrop {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    mix-blend-mode: overlay;
   }
 </style>

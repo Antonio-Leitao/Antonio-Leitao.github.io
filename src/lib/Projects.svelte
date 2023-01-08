@@ -12,8 +12,8 @@
   </div>
 
   <div class="projects">
-    {#each projects as { name, url, tech, abstract }}
-      <Project {name} {url} {tech} {abstract} />
+    {#each projects as { name, url, tech, abstract, thumbnail }}
+      <Project {name} {url} {tech} {abstract} {thumbnail}/>
     {/each}
   </div>
 </div>
