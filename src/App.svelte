@@ -7,10 +7,9 @@
   import { parse } from "toml";
 
   async function loadTomlFile() {
-    const response = await fetch("src/data/data.toml");
+    const response = await fetch("static/data.toml");
     const tomlString = await response.text();
     const data = parse(tomlString);
-    console.log(data)
     return data;
   }
   let dataload = loadTomlFile();
