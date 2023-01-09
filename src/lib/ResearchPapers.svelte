@@ -147,6 +147,8 @@
   .name {
     position: absolute;
     top: 30%;
+    left:0;
+    padding:0.5rem;
   }
   .title {
     letter-spacing: 0.05rem;
