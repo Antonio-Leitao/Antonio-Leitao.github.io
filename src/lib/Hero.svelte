@@ -47,7 +47,7 @@
       >
         <Social
           clickAction={() => handleClick("aleitao@centai.eu")}
-          label="aleitao@centai.eu"
+          label="Copy email to clipboard"
           color="#6D191B"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"

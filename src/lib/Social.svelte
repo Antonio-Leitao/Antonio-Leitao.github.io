@@ -38,6 +38,8 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.1s ease-out;
+    width:fit-content;
+    white-space:nowrap;
   }
 
   .tooltip::before {
