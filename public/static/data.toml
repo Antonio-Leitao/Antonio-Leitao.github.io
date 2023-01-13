@@ -1,16 +1,16 @@
 [[research]]
 topic = "Topological Data Analysis"
-description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perspiciatis libero necessitatibus provident qui rerum, eveniet ipsum magnam beatae doloribus, corporis nemo quisquam aliquam, excepturi repudiandae et at similique. Modi."
+description = "Topological Data Analysis (TDA) combines topology and machine learning to understand the shape and structure of data, particularly useful for high-dimensional, non-linear data. Lately I've been trying to understand how many different probalems a given Neural Network architecture is capable of solving."
 
 [[research.papers]]
 title = "Topological expressive power of Neural Networks"
-url = "https://www.w3schools.com/jsref/jsref_length_array.asp"
+url = "https://openreview.net/forum?id=I44kJPuvqPD"
 published = "NeurIPS 2020"
 
 [[research.papers]]
 title = "On the Topological Complexity of Decision Boundaries"
-url = "someurl"
-published = "NeurIPS 2020"
+url = "https://meetings3.sis-statistica.org/index.php/sis2021/index/pages/view/book"
+published = "SIS 2021"
 
 # [[research]]
 # topic = "Natural Language Processing"
