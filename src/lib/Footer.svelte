@@ -30,7 +30,9 @@
     </div>
     <div class="circle"><Mail color="#4A5057" strokeWidth={1} /></div>
   </div>
-  <p class="abstract">António Leitão © {year}</p>
+  <p class="abstract">
+    <a href="https://antonio-leitao.github.io/">António Leitão</a> © {year}
+  </p>
 </div>
 
 <style>
@@ -71,5 +73,8 @@
   }
   .circle:hover {
     background-color: var(--lvl1);
+  }
+  a {
+    color: inherit;
   }
 </style>
