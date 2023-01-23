@@ -37,8 +37,8 @@
   <div class="hero">
     <div
       class="wrapper"
-      style="filter:blur({scroll * 0.01}px);transform:translate(0,{scroll /
-        2}px);opacity:{1 - scroll / 500}"
+      style="filter:blur({scroll * 0.01}px);opacity:{1 -
+        scroll / 500};scale:{Math.max(1 - scroll / 2500, 0.8)};"
     >
       <div
         class="circle"
@@ -182,6 +182,7 @@
     display: grid;
     place-items: center;
     width: fit-content;
+    transition: opacity 0.5s ease-out, scale 0.5s ease-out;
   }
 
   .circle {
