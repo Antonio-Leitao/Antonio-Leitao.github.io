@@ -41,6 +41,13 @@ abstract = "Database of glyphs, motiffs and patterns from portuguese culture. Th
 thumbnail = "iconography"
 
 [[projects]]
+name = "Tiny Docs"
+url = "https://github.com/antonio-leitao/tinydocs"
+tech = "python"
+abstract = "TinyDocs is a lightweight and efficient solution for documenting Python code on Github, without the need for setting up and maintaining a separate website like readthedocs."
+thumbnail = "tinydocs"
+
+[[projects]]
 name = "Component Library"
 url = "https://antonio-leitao.github.io/components/"
 tech = "web"

@@ -46,7 +46,7 @@
         style="top:{getTop(-180)}; left:{getLeft(-180)}"
       >
         <Social
-          clickAction={() => handleClick("aleitao@centai.eu")}
+          clickAction={() => handleClick("leitaoto@gmail.com")}
           label="Copy email to clipboard"
           color="#6D191B"
         >
@@ -94,7 +94,7 @@
       >
         <Social
           clickAction={() =>
-            window.open("https://github.com/Antonio-Leitao", "_blank")}
+            window.open("https://github.com/antonio-leitao", "_blank")}
           label="Github"
           color="#202225"
         >
