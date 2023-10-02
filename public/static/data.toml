@@ -1,62 +1,70 @@
-[[research]]
-topic = "Topological Data Analysis"
-description = "Topological Data Analysis (TDA) combines topology and machine learning to understand the shape and structure of data, particularly useful for high-dimensional, non-linear data. Lately I've been trying to understand how many different probalems a given Neural Network architecture is capable of solving."
+[info]
+bio = "I'm PhD student in Applied Mathematics focussing on algebraic topology, topological data analysis and machine learning. I am also involved in multiple projects from NLP to Neuroscience. I am self taught at almost everything I'm good at."
+twitter = "@leitalhao"
+github = "github.com"
 
-[[research.papers]]
+[[papers]]
+title = "Social Learning across Cultural Boundaries in non-human Communication"
+url = "https://arxiv.org/abs/2307.05304"
+published = "ArXiv 2023"
+topic = "ceti"
+
+[[papers]]
 title = "Topological expressive power of Neural Networks"
 url = "https://openreview.net/forum?id=I44kJPuvqPD"
 published = "NeurIPS 2020"
+topic = "tda"
 
-[[research.papers]]
+[[papers]]
 title = "On the Topological Complexity of Decision Boundaries"
 url = "https://meetings3.sis-statistica.org/index.php/sis2021/index/pages/view/book"
 published = "SIS 2021"
-
-# [[research]]
-# topic = "Natural Language Processing"
-# description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perspiciatis libero necessitatibus provident qui rerum, eveniet ipsum magnam beatae doloribus, corporis nemo quisquam aliquam, excepturi repudiandae et at similique. Modi."
-
-# [[research.papers]]
-# title = "Topological expressive power of Neural Networks"
-# url = "https://www.w3schools.com/jsref/jsref_length_array.asp"
-# published = "NeurIPS 2020"
-
-# [[research.papers]]
-# title = "On the Topological Complexity of Decision Boundaries"
-# url = "someurl"
-# published = "NeurIPS 2020"
+topic = "tda"
 
 [[projects]]
 name = "Jet"
 url = "https://github.com/antonio-leitao/jet"
-tech = "python"
 abstract = "JET is a testing library for python aimed at being fast to set up, easy to use and above all pleasing to the eye. Because testing does not have to be a chore to set up, clutter the terminal or ugly to look at."
 thumbnail = "jet"
 
 [[projects]]
-name = "Portuguese Iconography"
+name = "Iconography"
 url = "https://github.com/antonio-leitao/iconografia-portuguesa"
-tech = "web • database"
 abstract = "Database of glyphs, motiffs and patterns from portuguese culture. The purpose of this project is to trace, catalogue and index them as well as to make this Iconography known to the world."
 thumbnail = "iconography"
 
 [[projects]]
 name = "Tiny Docs"
 url = "https://github.com/antonio-leitao/tinydocs"
-tech = "python"
 abstract = "TinyDocs is a lightweight and efficient solution for documenting Python code on Github, without the need for setting up and maintaining a separate website like readthedocs."
 thumbnail = "tinydocs"
 
 [[projects]]
-name = "Component Library"
+name = "VLMC"
 url = "https://antonio-leitao.github.io/components/"
-tech = "web"
 abstract = "A UI components library written in svelte. Mostly for personal use, experimentation, learning and documentation."
 thumbnail = "components"
 
 [[projects]]
-name = "DB Sampler"
+name = "DBSampler"
 url = "https://github.com/antonio-leitao/dbsampler"
-tech = "rust • python"
+abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+thumbnail = "dbsampler"
+
+[[projects]]
+name = "NAU"
+url = "https://github.com/antonio-leitao/dbsampler"
+abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+thumbnail = "dbsampler"
+
+[[projects]]
+name = "Caravela"
+url = "https://github.com/antonio-leitao/dbsampler"
+abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+thumbnail = "dbsampler"
+
+[[projects]]
+name = "Ark"
+url = "https://github.com/antonio-leitao/dbsampler"
 abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
 thumbnail = "dbsampler"

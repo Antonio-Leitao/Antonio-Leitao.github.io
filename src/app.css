@@ -1,78 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans:wght@300;400;500&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-:root {
-  --bg: #efeff0;
-  --lvl1: #fff;
-  --neutral: rgb(10, 10, 10);
-  --shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 2px 3px 12px rgba(0, 0, 0, 0.2);
-  font-family: "Roboto", sans-serif;
-  background-color: var(--bg);
-}
-
 /* :roo.dark{ */
 :root {
-  --bg: #000;
+  --clr-red: #ff2850;
+  --clr-orange: #ff9600;
+  --clr-yellow: #ffb30f;
+  --clr-green: #3ec949;
+  --clr-cyan: #4db7dd;
+  --clr-blue: #0076f0;
+  --clr-purple: #5751d0;
+
+  --foreground: #d4cdc0;
+  --salmon: #f2856d;
+  --yellow: #f2b56b;
+  --pistachio: #c1d98f;
+  --azure: #8ed8f8;
+  --blue: #8ca7d7;
+  --violet: #b293bf;
+  --highlight: #e7e8e9;
+  --text: #bbbbbb;
+  --subtext: #87959b;
+  --subdued: #536e7a;
+  --muted: #2e3c44;
+  --hover: #1c2329;
+  --surfaces: #13171b;
+  --lines: #0e1114;
+  --shade: #0c0e1f;
+  --base: #090a0d;
   --lvl1: rgb(13, 17, 23);
   --shadow: 10px 10px 8px #00000088;
   --ash: #efeff0;
   --text1: rgb(240, 242, 244);
   --text2: rgb(134, 143, 151);
   --text3: rgb(74, 80, 87);
-}
-
-.glass {
-  background-color: rgba(10, 10, 10, 0.01);
-  box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
-  color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  background-blend-mode: overlay;
-  border: rgba(10, 10, 10, 1) 1px solid;
-}
-
-.title {
-  font-family: "Libre Baskerville", serif;
-  color: var(--text1);
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.subtitle {
-  color: var(--text1);
-  font-family: "Libre Baskerville", serif;
-  /* color: var(--clr-foreground-deep); */
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.abstract {
-  font-family: "Roboto", sans-serif;
-  /* color: rgba(255, 255, 255, 0.7); */
-  color: var(--text2);
-  font-weight: 100;
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.05rem;
-}
-
-.displaytitle {
-  position: relative;
-  margin-top: 1.3rem;
-  font-family: "Libre Baskerville", serif;
-  color: var(--text1);
-  font-size: 1.8rem;
-  font-weight: 800;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  background-color: var(--base);
+  background-image: linear-gradient(
+      transparent 49px,
+      var(--surfaces) 49px,
+      var(--surfaces) 51px,
+      transparent 51px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 49px,
+      var(--surfaces) 49px,
+      var(--surfaces) 51px,
+      transparent 51px
+    ),
+    linear-gradient(
+      transparent 9px,
+      var(--lines) 9px,
+      var(--lines) 10px,
+      transparent 10px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 9px,
+      var(--lines) 9px,
+      var(--lines) 10px,
+      transparent 10px
+    );
+  background-size:
+    100px 100px,
+    100px 100px,
+    20px 20px,
+    20px 20px;
+  background-position: center;
+  /* Consider shadow-md tailwind if this is too small */
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  color: var(--foreground);
+  font-family: "JetBrains Mono", sans-serif;
+  line-height: 1.3rem;
 }
