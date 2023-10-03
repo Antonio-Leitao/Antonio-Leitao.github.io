@@ -1,7 +1,7 @@
 [info]
 bio = "I'm PhD student in Applied Mathematics focussing on algebraic topology, topological data analysis and machine learning. I am also involved in multiple projects from NLP to Neuroscience. I am self taught at almost everything I'm good at."
-twitter = "@leitalhao"
-github = "github.com"
+twitter = "https://twitter.com/leitalhao"
+github = "https://github.com/antonio-leitao"
 
 [[papers]]
 title = "Social Learning across Cultural Boundaries in non-human Communication"

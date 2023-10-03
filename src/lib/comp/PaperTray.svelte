@@ -1,11 +1,17 @@
 <script>
     import {papers} from "../scripts/store.js";
+    import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
     import Paper from "./Paper.svelte";
+    // import Dropdown from "./Dropdown.svelte";
 </script>
 
 <div class="tray">
-  {#each $papers as paper}
+    <!-- <Dropdown/> -->
+  {#each $papers as paper, i}
+   <div in:fly={{duration:300,y:-100,delay:i*100,opacity:0.1,easing:quintOut}}>
         <Paper {...paper}/>
+    </div> 
   {/each}
 </div>
 
