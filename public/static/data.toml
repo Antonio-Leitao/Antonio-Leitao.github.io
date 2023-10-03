@@ -55,13 +55,13 @@ thumbnail = "dbsampler"
 name = "NAU"
 url = "https://github.com/antonio-leitao/dbsampler"
 abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
-thumbnail = "dbsampler"
+thumbnail = "nau"
 
 [[projects]]
 name = "Caravela"
 url = "https://github.com/antonio-leitao/dbsampler"
 abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
-thumbnail = "dbsampler"
+thumbnail = "caravela"
 
 [[projects]]
 name = "Ark"
