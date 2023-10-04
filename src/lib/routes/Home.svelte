@@ -5,6 +5,7 @@
     import Icon from "../comp/Icon.svelte";
     import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+    import Link from "../comp/Link.svelte";
     let open = false;
     function formatNumber(number) {
       const formattedNumber = Math.max(0, Math.min(number, 999));
@@ -45,7 +46,9 @@
                 </div>
             </div>
             <div class="bio">
-                {$info.bio}
+                I'm a PhD Student at the <Link name="Normale" url="https://www.sns.it"/> in Pisa. I work mostly on applied topology, information theory and machine learning. Currently part of <Link name="NPLab" url="https://nplresearch.github.io/"/> and a collaborator of <Link name="CETI" url="https://www.projectceti.org/"/>.
+                    <br/>
+                As a man of culture I like spending hours automating tasks that take seconds, writing projects in Rust, Go and Javascript.
             </div>
             <div class="projects">
                 {#each $projects as project, i}

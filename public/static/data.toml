@@ -1,5 +1,4 @@
 [info]
-bio = "I'm PhD student in Applied Mathematics focussing on algebraic topology, topological data analysis and machine learning. I am also involved in multiple projects from NLP to Neuroscience. I am self taught at almost everything I'm good at."
 twitter = "https://twitter.com/leitalhao"
 github = "https://github.com/antonio-leitao"
 
@@ -8,18 +7,21 @@ title = "Social Learning across Cultural Boundaries in non-human Communication"
 url = "https://arxiv.org/abs/2307.05304"
 published = "ArXiv 2023"
 topic = "ceti"
+summary = "Using variable length Markov models for modeling whale vocalizaations, we found that clans with geographic proximity exhibit more similar vocal styles, indicating social learning between clans."
 
 [[papers]]
 title = "Topological expressive power of Neural Networks"
 url = "https://openreview.net/forum?id=I44kJPuvqPD"
 published = "NeurIPS 2020"
 topic = "tda"
+summary = "We propose a topological description of neural network expressive power: the topology of the space of decision boundaries realized by a neural architecture."
 
 [[papers]]
 title = "On the Topological Complexity of Decision Boundaries"
 url = "https://meetings3.sis-statistica.org/index.php/sis2021/index/pages/view/book"
 published = "SIS 2021"
 topic = "tda"
+summary = "Classifying two concentric circles is challenging not because they are circles, but because they are concentric. We study and argue that the topology of the decision boundary of a classification problem is the most natural measure of its intrinsic complexity."
 
 [[projects]]
 name = "Jet"
