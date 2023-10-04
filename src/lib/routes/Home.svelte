@@ -5,7 +5,7 @@
     import Icon from "../comp/Icon.svelte";
     import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-    let open = true;
+    let open = false;
     function formatNumber(number) {
       const formattedNumber = Math.max(0, Math.min(number, 999));
       return formattedNumber.toString().padStart(3, '0');
@@ -20,7 +20,7 @@
     }
 </script>
 <div class="container">
-    <div class="wrapper">
+    <div class="wrapper" class:toggle={open && !$isSmallScreen}>
         <div style="position: absolute; left: 50%; top:25%;">
             <div class="icon">
             {#if selected_project}
@@ -84,6 +84,19 @@
         display:grid;
         place-items:center;
         margin-left:4rem;
+    }
+    .toggle::after{
+        content:"PAPERS";
+        position:absolute;
+        right:-48.5vh;
+        height:1rem;
+        width:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:var(--muted);
+        background-color: var(--lines);
+        transform: rotate(-90deg);
     }
     .content{
         width:700px;
