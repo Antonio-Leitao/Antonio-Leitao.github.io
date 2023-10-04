@@ -43,7 +43,7 @@ thumbnail = "tinydocs"
 name = "VLMC"
 url = "https://antonio-leitao.github.io/components/"
 abstract = "A UI components library written in svelte. Mostly for personal use, experimentation, learning and documentation."
-thumbnail = "components"
+thumbnail = "vlmc"
 
 [[projects]]
 name = "DBSampler"
