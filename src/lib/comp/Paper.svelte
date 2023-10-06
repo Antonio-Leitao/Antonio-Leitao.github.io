@@ -16,7 +16,7 @@
     .paper{
         position:relative;
         padding:1.5rem;
-        margin-top:1.625rem;
+        margin-top:1rem;
         width:315px;
         height:330px; 
         box-shadow:var(--shadow);

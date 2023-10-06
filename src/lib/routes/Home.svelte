@@ -57,13 +57,13 @@
                             on:mouseleave={()=>selected_project=null}
                             >
                         <div class="project-order">{formatNumber(i)}</div>
-                        <div class="project-name"> {project.name}</div>
+                        <a href={project.url} class="project-name" target="_blank">{project.name}</a>
                 </div>
                 {/each}
             </div>
         </div>
         <div class="footer">
-            <a href={info.twitter}>Twitter</a>::<a href={info.github}>Github</a>::<a href={info.email}>E-mail</a>
+            <a href={$info.twitter} target="_blank">Twitter</a>::<a href={$info.github} target="_blank">Github</a>::<a href={$info.scholar} target="_blank" >Scholar</a>
         </div>
     </div>
 </div>
@@ -81,13 +81,28 @@
         height:100vh;
     }
     .wrapper{
-        /* margin:15rem 13rem 0 13rem; */
         position:relative;
         flex:1;
         display:grid;
         place-items:center;
         margin-left:4rem;
     }
+    /* .spotlight{ */
+    /*     position:absolute; */
+    /*     top:0; */
+    /*     left:-4rem; */
+    /*     right:0; */
+    /*     height:100vh; */
+    /*     background-image: -webkit-radial-gradient( */
+    /*       top, */
+    /*       circle cover, */
+    /*       rgba(46, 60, 68, 0.6) 20%, */
+    /*       #000 110% */
+    /*     ); */
+    /*     opacity:0.25; */
+    /*     z-index:-1; */
+    /**/
+    /* } */
     .toggle::after{
         content:"PAPERS";
         position:absolute;
@@ -178,7 +193,7 @@
         height:1rem;
         top:0;
         left:0;
-        background-color:var(--foreground);
+        background-color:var(--yellow);
         transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         z-index:-1;
     }
@@ -205,8 +220,9 @@
         margin-top:8rem;
         color:var(--muted);
         cursor: pointer;
+        z-index:1;
     }
-    .footer a:hover{
+    .footer a:hover {
         color:var(--foreground)
     }
     a{
