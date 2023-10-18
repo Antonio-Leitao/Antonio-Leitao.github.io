@@ -24,50 +24,48 @@ published = "SIS 2021"
 topic = "tda"
 summary = "Classifying two concentric circles is challenging not because they are circles, but because they are concentric. We study and argue that the topology of the decision boundary of a classification problem is the most natural measure of its intrinsic complexity."
 
+##### PROJECTS #####
 [[projects]]
 name = "Jet"
 url = "https://github.com/antonio-leitao/jet"
-abstract = "JET is a testing library for python aimed at being fast to set up, easy to use and above all pleasing to the eye. Because testing does not have to be a chore to set up, clutter the terminal or ugly to look at."
 thumbnail = "jet"
 
 [[projects]]
 name = "Iconography"
 url = "https://github.com/antonio-leitao/iconografia-portuguesa"
-abstract = "Database of glyphs, motiffs and patterns from portuguese culture. The purpose of this project is to trace, catalogue and index them as well as to make this Iconography known to the world."
 thumbnail = "iconography"
 
 [[projects]]
 name = "Tiny Docs"
 url = "https://github.com/antonio-leitao/tinydocs"
-abstract = "TinyDocs is a lightweight and efficient solution for documenting Python code on Github, without the need for setting up and maintaining a separate website like readthedocs."
 thumbnail = "tinydocs"
 
 [[projects]]
 name = "VLMC"
-url = "https://antonio-leitao.github.io/components/"
-abstract = "A UI components library written in svelte. Mostly for personal use, experimentation, learning and documentation."
+url = "https://github.com/antonio-leitao/vlmc"
 thumbnail = "vlmc"
 
 [[projects]]
 name = "DBSampler"
 url = "https://github.com/antonio-leitao/dbsampler"
-abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
 thumbnail = "dbsampler"
 
 [[projects]]
 name = "NAU"
-url = "https://github.com/antonio-leitao/dbsampler"
-abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+url = "https://github.com/antonio-leitao/nau"
 thumbnail = "nau"
 
 [[projects]]
 name = "Caravela"
-url = "https://github.com/antonio-leitao/dbsampler"
-abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+url = "https://github.com/antonio-leitao/caravela"
 thumbnail = "caravela"
 
 [[projects]]
 name = "Ark"
-url = "https://github.com/antonio-leitao/dbsampler"
-abstract = "Python library for efficient and exact sampling of the decision boundary of high dimensional classification problems (binary or multiclass)."
+url = "https://github.com/antonio-leitao/ark"
 thumbnail = "ark"
+
+[[projects]]
+name = "Press"
+url = "https://github.com/antonio-leitao/printing-press"
+thumbnail = "press"

@@ -35,7 +35,7 @@
         height:5px;
     }
     .paper-date{
-      font-family: "Noto Sans", sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 0.75rem;
         font-weight:300;
         color: var(--subtext);
@@ -49,7 +49,7 @@
         color: var(--hover);
     }
     .paper-summary{
-      font-family: "Noto Sans", sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size:0.8rem;
         color:var(--muted);
         line-height:1.3rem;

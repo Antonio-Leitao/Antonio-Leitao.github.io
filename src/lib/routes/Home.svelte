@@ -3,7 +3,7 @@
     import {info,projects, useMediaQuery} from "../scripts/store.js";
     import PaperTray from "../comp/PaperTray.svelte"
     import Icon from "../comp/Icon.svelte";
-    import { fly } from 'svelte/transition';
+    import { fly} from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
     import Link from "../comp/Link.svelte";
     let open = false;
@@ -24,15 +24,17 @@
     <div class="wrapper" class:toggle={open && !$isSmallScreen}>
         <div style="position: absolute; left: 50%; top:25%;">
             <div class="icon">
-            {#if selected_project}
-            <Icon
-                name={selected_project}
-                color={"#13171b"}
-                opacity={1}
-                height={"100%"}
-                width={"100%"}
-            />
-            {/if}
+            {#key selected_project}
+                {#if selected_project}
+                    <Icon
+                        name={selected_project}
+                        color={"#13171b"}
+                        opacity={1}
+                        height={"100%"}
+                        width={"100%"}
+                    />
+                {/if}
+            {/key}
             </div>
         </div>
         <div class="content">
@@ -42,13 +44,13 @@
                         António Leitão
                     </div>
                     <div class="link">
-                        <div style="cursor:pointer;" on:click={openResearch}> Research -></div>
+                        <div style="cursor:pointer;" on:click={openResearch}> Research {open?"<-":"->"}</div>
                 </div>
             </div>
             <div class="bio">
                 I'm a PhD Student at the <Link name="Normale" url="https://www.sns.it"/> in Pisa. I work mostly on applied topology, information theory and machine learning. Currently part of <Link name="NPLab" url="https://nplresearch.github.io/"/> and a collaborator of <Link name="CETI" url="https://www.projectceti.org/"/>.
                     <br/>
-                As a man of culture I like spending hours automating tasks that take seconds, writing projects in Rust, Go and Javascript.
+                As a man of culture I like spending hours automating tasks that take seconds, writing projects in Rust, Python, Go and Javascript.
             </div>
             <div class="projects">
                 {#each $projects as project, i}
@@ -131,6 +133,7 @@
         pointer-events: none;
     }
     .name{
+        position: relative;
         margin: 1rem 0;
         font-size: 1.5rem;
         font-weight:800;
@@ -150,7 +153,7 @@
         justify-content: space-between;
     }
     .bio{
-        font-family: "Noto Sans", sans-serif;
+        font-family: 'Inter', sans-serif;
         line-height: 1.8rem;
         margin-bottom:1rem;
         font-weight:300;
