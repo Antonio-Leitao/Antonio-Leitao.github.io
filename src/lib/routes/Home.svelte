@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="bio">
-                I'm a PhD Student at the <Link name="Normale" url="https://www.sns.it"/> in Pisa. I work mostly on applied topology, information theory and machine learning. Currently part of <Link name="NPLab" url="https://nplresearch.github.io/"/> and a collaborator of <Link name="CETI" url="https://www.projectceti.org/"/>.
+                I'm a PhD Student at the <Link name="Scuola Normale Superiore" url="https://www.sns.it"/> in Pisa. I work mostly on applied topology, information theory and machine learning. Currently part of <Link name="NPLab" url="https://nplresearch.github.io/"/> and a collaborator of <Link name="CETI" url="https://www.projectceti.org/"/>.
                     <br/>
                 As a man of culture I like spending hours automating tasks that take seconds, writing projects in Rust, Python, Go and Javascript.
             </div>

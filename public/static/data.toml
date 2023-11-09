@@ -61,9 +61,9 @@ url = "https://github.com/antonio-leitao/caravela"
 thumbnail = "caravela"
 
 [[projects]]
-name = "Ark"
-url = "https://github.com/antonio-leitao/ark"
-thumbnail = "ark"
+name = "Bib"
+url = "https://github.com/antonio-leitao/bib"
+thumbnail = "bib"
 
 [[projects]]
 name = "Press"
