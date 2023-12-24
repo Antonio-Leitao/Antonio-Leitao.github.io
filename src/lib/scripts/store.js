@@ -2,7 +2,7 @@ import { readable } from "svelte/store";
 import { parse } from "toml";
 
 async function loadData() {
-    const response = await fetch("static/data.toml");
+    const response = await fetch("static/data.toml");//static/
     const tomlString = await response.text();
     const data = parse(tomlString);
     return {info:readable(data["info"]), papers: readable(data["papers"]), projects: readable(data["projects"]) };
