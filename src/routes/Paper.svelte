@@ -15,9 +15,10 @@
 <style>
     .paper{
         position:relative;
-        padding:1.5rem;
+        padding:1.3rem 1.5rem;
         margin-top:1rem;
-        width:315px;
+        /* width:315px; */
+        width:280px;
         height:330px; 
         box-shadow:var(--shadow);
         background-color:#fff;
@@ -35,21 +36,19 @@
         height:5px;
     }
     .paper-date{
-        font-family: 'Inter', sans-serif;
-        font-size: 0.75rem;
-        font-weight:300;
+        font-size: 0.65rem;
+        font-style:italic;
         color: var(--subtext);
     }
     .paper-title{
-        margin: 0.8rem 0;
+        margin: 0rem 0 0.8rem 0;
         font-family: 'Lora', serif;
         font-size: 1.2rem;
         font-weight:900;
-        line-height: 1.8rem;
+        line-height: 1.6rem;
         color: var(--hover);
     }
     .paper-summary{
-        font-family: 'Inter', sans-serif;
         font-size:0.8rem;
         color:var(--muted);
         line-height:1.3rem;
