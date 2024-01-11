@@ -1,30 +1,26 @@
 <script>
-    import Paper from './Paper.svelte';
+    import Project from "./Project.svelte";
     import {flip} from "svelte/animate";
     import {fly} from "svelte/transition";
     import {quintOut} from "svelte/easing";
     export let data;
 </script>
-<svelte:head>
-	<title>publications</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
 
-<section class="research">
+<section class="projects">
     <span class="statement">
-        Research Papers
+        Projects
     </span>
     <div class="grid">
-        {#each data.papers as paper,i (paper.title)}
+        {#each data.projects as project,i (project.title)}
             <div in:fly={{duration:300,y:-100,delay:i*100,opacity:0.1,easing:quintOut}} animate:flip={{duration: 300, easing: quintOut }}>
-                <Paper {...paper}/>
+                <Project {...project}/>
             </div>
         {/each}
     </div>
 </section>
 
 <style>
-    .research{
+    .projects{
         width:100%;
         padding:2rem;
         background-color: var(--ash);

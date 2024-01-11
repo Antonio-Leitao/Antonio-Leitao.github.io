@@ -8,7 +8,8 @@ commit:
 	@git add -A
 	@DESCRIPTION=$$(gum write --width 60 --height 6 --base.margin "1 1" --cursor.foreground 31 --placeholder "Details of this change (CTRL+D to finish)");\
 	gum confirm --selected.background 31 "Commit changes?" && git commit -m "$$DESCRIPTION"
-	@git push origin master
+	@BRANCH=$$(git rev-parse --abbrev-ref HEAD);\
+	git push origin $$BRANCH
 
 publish:
 	@npm run build

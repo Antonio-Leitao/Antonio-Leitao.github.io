@@ -14,10 +14,10 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/publications' ? 'page' : undefined}>
-				<a href="/Publications">Publications</a>
+				<a href="/publications">Publications</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a href="/Projects">Projects</a>
+				<a href="/projects">Projects</a>
 			</li>
 		</ul>
 	</nav>
