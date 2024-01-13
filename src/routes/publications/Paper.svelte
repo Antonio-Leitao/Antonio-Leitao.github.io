@@ -23,6 +23,7 @@
         box-shadow:var(--shadow);
         background-color:#fff;
         cursor:pointer;
+        transition: all 0.25s ease;
     }
     .paper:hover{
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -55,9 +56,9 @@
     }
     /* topics */
     .tda::before{
-        background-color: var(--clr-cyan);
+        background-color: var(--ml-cyan);
     }
     .ceti::before{
-        background-color: var(--clr-yellow);
+        background-color: var(--ml-yellow);
     }
 </style>

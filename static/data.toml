@@ -26,46 +26,64 @@ summary = "Classifying two concentric circles is challenging not because they ar
 
 ##### PROJECTS #####
 [[projects]]
-name = "Jet"
-url = "https://github.com/antonio-leitao/jet"
-thumbnail = "jet"
-
-[[projects]]
-name = "Iconography"
-url = "https://github.com/antonio-leitao/iconografia-portuguesa"
-thumbnail = "iconography"
-
-[[projects]]
-name = "Tiny Docs"
-url = "https://github.com/antonio-leitao/tinydocs"
-thumbnail = "tinydocs"
-
-[[projects]]
-name = "VLMC"
-url = "https://github.com/antonio-leitao/vlmc"
-thumbnail = "vlmc"
-
-[[projects]]
-name = "DBSampler"
-url = "https://github.com/antonio-leitao/dbsampler"
-thumbnail = "dbsampler"
-
-[[projects]]
-name = "NAU"
-url = "https://github.com/antonio-leitao/nau"
-thumbnail = "nau"
+name = "Heron"
+url = "https://github.com/antonio-leitao/heron"
+icon = "heron"
+lang="rust"
 
 [[projects]]
 name = "Caravela"
 url = "https://github.com/antonio-leitao/caravela"
-thumbnail = "caravela"
+icon = "caravela"
+lang = "rust"
 
 [[projects]]
 name = "Bib"
 url = "https://github.com/antonio-leitao/bib"
-thumbnail = "bib"
+icon = "bib"
+lang="rust"
+
+[[projects]]
+name = "Jet"
+url = "https://github.com/antonio-leitao/jet"
+icon = "jet"
+lang= "python"
+
 
 [[projects]]
 name = "Press"
 url = "https://github.com/antonio-leitao/printing-press"
-thumbnail = "press"
+icon = "press"
+lang = "rust"
+
+[[projects]]
+name = "VLMC"
+url = "https://github.com/antonio-leitao/vlmc"
+icon = "vlmc"
+lang = "rust"
+
+[[projects]]
+name = "NAU"
+url = "https://github.com/antonio-leitao/nau"
+icon = "nau"
+lang="go"
+
+[[projects]]
+name = "Iconography"
+url = "https://github.com/antonio-leitao/iconografia-portuguesa"
+icon = "iconography"
+lang = "javascript"
+
+[[projects]]
+name = "Tiny Docs"
+url = "https://github.com/antonio-leitao/tinydocs"
+icon = "tinydocs"
+lang = "python"
+
+
+[[projects]]
+name = "DBSampler"
+url = "https://github.com/antonio-leitao/dbsampler"
+icon = "dbsampler"
+lang="python"
+

@@ -11,7 +11,7 @@
         Projects
     </span>
     <div class="grid">
-        {#each data.projects as project,i (project.title)}
+        {#each data.projects as project,i (project.name)}
             <div in:fly={{duration:300,y:-100,delay:i*100,opacity:0.1,easing:quintOut}} animate:flip={{duration: 300, easing: quintOut }}>
                 <Project {...project}/>
             </div>
