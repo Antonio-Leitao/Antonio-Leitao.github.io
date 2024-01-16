@@ -43,6 +43,7 @@
         background-color:#fff;
         cursor:pointer;
         transition: all 0.25s ease;
+        border:solid 1px rgb(208, 215, 222);
     }
     .project:hover{
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);

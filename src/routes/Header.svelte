@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import avatar from '$lib/images/avatar_svg.svg';
-    export let data;
 </script>
 
 <header>
@@ -13,22 +12,25 @@
 
 	<nav>
 		<ul>
-			<li aria-current={$page.url.pathname === '/publications' ? 'page' : undefined}>
-				<a href="/publications">Publications</a>
+			<li aria-current={$page.url.pathname === '/Publications' ? 'page' : undefined}>
+				<a href="/Publications">Publications</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a href="/projects">Projects</a>
+			<li aria-current={$page.url.pathname === '/Projects' ? 'page' : undefined}>
+				<a href="/Projects">Projects</a>
 			</li>
 		</ul>
 	</nav>
 
 	<nav class="social">
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li>
 				<a href="https://github.com/antonio-leitao">Github</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
+			<li>
 				<a href="https://scholar.google.com/citations?user=kJStlYkAAAAJ&hl=en">Scholar</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/leitalhao">Twitter</a>
 			</li>
 		</ul>
 	</nav>

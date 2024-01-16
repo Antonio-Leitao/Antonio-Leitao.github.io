@@ -6,7 +6,7 @@
     export let data;
 </script>
 <svelte:head>
-	<title>publications</title>
+	<title>Publications</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 

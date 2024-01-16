@@ -1,6 +1,7 @@
 <script>
   export let name;
   export let color;
+  export let margin="0rem";
   export let width = "1rem";
   export let height = "1rem";
   export let opacity = 1;
@@ -115,7 +116,7 @@
 </script>
 
 <svg
-  style="fill:{color};opacity:{opacity};"
+  style="fill:{color};opacity:{opacity};margin:{margin};"
   {width}
   {height}
   viewBox="0 0 {displayIcon.box_x} {displayIcon.box_y}"

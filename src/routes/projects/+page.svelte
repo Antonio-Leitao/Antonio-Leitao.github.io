@@ -6,6 +6,11 @@
     export let data;
 </script>
 
+<svelte:head>
+	<title>Projects</title>
+	<meta name="description" content="List of ongoing projects" />
+</svelte:head>
+
 <section class="projects">
     <span class="statement">
         Projects
