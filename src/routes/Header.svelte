@@ -12,6 +12,9 @@
 
 	<nav>
 		<ul>
+			<li aria-current={$page.url.pathname === '/Activity' ? 'page' : undefined}>
+				<a href="/Activity">News</a>
+			</li>
 			<li aria-current={$page.url.pathname === '/Publications' ? 'page' : undefined}>
 				<a href="/Publications">Publications</a>
 			</li>
@@ -51,14 +54,14 @@
       display: inline-block;
       margin-right: 0.8rem; /* add spacing between items */
     }
-    a{
-    text-decoration: none;
-      color: var(--base);
-      font-weight:400;
-    }
-    a:hover{
-    text-decoration: underline;
-    }
+    /* a{ */
+    /* text-decoration: none; */
+    /*   color: var(--base); */
+    /*   font-weight:400; */
+    /* } */
+    /* a:hover{ */
+    /* text-decoration: underline; */
+    /* } */
     .corner a img{
         height:1.4rem;
         margin-right:0.8rem;

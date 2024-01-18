@@ -60,3 +60,13 @@ body {
   background-color: var(--color-bg-1);
   background-size: 100vw 100vh;
 }
+
+a{
+text-decoration: none;
+  color: var(--base);
+  font-weight:400;
+}
+a:hover{
+text-decoration: underline;
+}
+

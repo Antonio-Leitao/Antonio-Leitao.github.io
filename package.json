@@ -17,6 +17,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"lucide-svelte": "^0.312.0",
 		"toml": "^3.0.0"
 	}
 }

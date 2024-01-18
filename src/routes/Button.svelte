@@ -1,8 +1,9 @@
 
 <script>
     export let text="Projects";
+    export let disabled = false;
 </script>
-<div class="button">
+<div class="button" class:disabled>
     {text}
 </div>
 <style>
@@ -14,8 +15,17 @@
         padding:0.3rem 1rem;
         font-weight:300;
         cursor: pointer;
+        display: grid;
+        align-items: center;
     }
     .button:hover{
         background-color:var(--base);
+    }
+    .disabled{
+        background-color: var(--color-bg-1);
+        color: var(--hover);
+    }
+    .disabled:hover{
+        color: var(--text1)
     }
 </style>

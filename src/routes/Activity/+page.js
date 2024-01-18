@@ -6,15 +6,11 @@ import { parse } from "toml";
 
 
 export const load = async ({ fetch }) => {
-    const response = await fetch("data.toml");//static/
+    const response = await fetch("news.toml");//static/
     const tomlString = await response.text();
     const data = parse(tomlString);
-    const new_response = await fetch("news.toml");//static/
-    const new_tomlString = await new_response.text();
-    const news = parse(new_tomlString);
-    return {news:{...news},info:data["info"], papers: data["papers"], projects: data["projects"] };
+    return {...data};
 }
-
 
 // export function load({params}) {
 //     const response = await fetch("static/data.toml");//static/

@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects</title>
+	<title>Leitão • Projects</title>
 	<meta name="description" content="List of ongoing projects" />
 </svelte:head>
 
