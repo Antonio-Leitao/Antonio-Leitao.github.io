@@ -2,7 +2,7 @@
     export let title;
     export let date;
     export let summary;
-    export let link;
+    export let link=undefined;
 </script>
 
 <div class="topline">

@@ -2,10 +2,6 @@
 	import avatar from '$lib/images/avatar_svg.svg';
     import Button from './Button.svelte';
     export let data;
-    const chronoKeys = Object.keys(data.news).reverse();
-    let year = chronoKeys[0];
-    const typesList = ["paper","talk","code","info"]
-    import Dataview from "./About/Dataview.svelte";
 </script>
 
 <svelte:head>
@@ -26,25 +22,10 @@
         I'm a PhD student working on applied algebraic topology and machine learning.
     </span>
     <span>
-        <Button text={"About"}/>
+        <a href="/About">
+            <Button text={"About"}/>
+        </a>
     </span>
-    <div class="scroll">
-        Scroll down for news
-    </div>
-</section>
-
-<section class="activity">
-    Recent Activity
-<div class="layout">
-    <div class="timeline">
-        <div class="year"><span>{year}</span></div>
-        {#each typesList as type}
-            {#if type in data.news[year]}
-                <Dataview {type} events={data.news[year][type]}/>
-            {/if}
-        {/each}
-    </div>
-</div>
 </section>
 
 <style>
@@ -56,9 +37,6 @@
 		align-items: center;
 		flex: 0.6;
 	}
-    .activity{
-		justify-content: flex-start;
-    }
 	h1 {
 		width: 100%;
 		text-align: center;
@@ -79,31 +57,10 @@
 		text-align: center;
 		/* padding: 0 0 calc(100% * 495 / 2048) 0; */
 	}
-    .scroll{
-        font-size:0.65rem;
+    a{
+        text-decoration: none;
     }
-    /* Add your styling here */
-    .layout{
-        display: flex;
-        justify-content: center;
-    }
-    .timeline {
-        width:85vh;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    }
-
-    .year {
-        font-size: 0.7em;
-        font-weight: bold;
-        margin-bottom: 10px;
-        border-bottom: solid 1px rgb(208, 215, 222);
-        height:0.8rem;
-        margin:1rem 1rem;
-    }
-    .year span{
-        background-color:rgb(255,255,255);
-        padding:0 0.6rem;
-        margin-left:1.5rem;
+    a::hover{
+        text-decoration: none;
     }
 </style>

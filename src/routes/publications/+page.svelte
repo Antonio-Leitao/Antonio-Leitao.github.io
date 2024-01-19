@@ -6,7 +6,7 @@
     export let data;
 </script>
 <svelte:head>
-	<title>Leitão • Publications</title>
+	<title>António Leitão • Publications</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
@@ -26,6 +26,7 @@
 <style>
     .research{
         width:100%;
+        min-height:92vh;
         padding:2rem;
         background-color: var(--ash);
         background-position: center;
@@ -36,7 +37,10 @@
         background-position: -19px -19px;
         box-shadow: inset var(--shadow);
     }
-
+    .statement{
+        text-align: center;
+        margin: -3rem 0 1rem 0;
+    }
     .grid{
         width:100%;
         display:grid;

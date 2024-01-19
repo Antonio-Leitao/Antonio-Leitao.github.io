@@ -10,13 +10,13 @@
 <div class="socials">
     {#if pip}
     <div class="icon">
-        <Download size=18 color=#656d76/> 
+        <Download size=16 color=#656d76/> 
     </div>
     <img src={`https://img.shields.io/pepy/dt/${pip}?style=flat-square&label=%20&labelColor=rgba(255%2C255%2C255)&color=rgba(255%2C255%2C255)`} alt="downloadcount">
     Downloads &nbsp;&nbsp;
     {/if}
     <div class="icon">
-        <Star size=18 color=#656d76/> 
+        <Star size=16 color=#656d76/> 
     </div>
     <img src={`https://img.shields.io/github/stars/antonio-leitao/${repo}?style=flat-square&label=%20&labelColor=rgb(255%2C255%2C255)&color=rgb(255%2C255%2C255)`} alt="downloadcount">Stars
 </div>

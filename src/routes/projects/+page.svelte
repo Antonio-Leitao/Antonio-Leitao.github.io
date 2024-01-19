@@ -9,11 +9,14 @@
 </script>
 
 <svelte:head>
-	<title>Leitão • Projects</title>
+	<title>António Leitão • Projects</title>
 	<meta name="description" content="List of ongoing projects" />
 </svelte:head>
 
 <section class="projects">
+    <span class="statement">
+        Software Projects
+    </span>
     <div class="layout">
         <span class="thumbnails">
             {#each data.projects as project,i (project.name)}
@@ -42,6 +45,7 @@
 <style>
     .projects{
         width:100%;
+        min-height:92vh;
         padding:2rem;
         background-color: var(--ash);
         background-position: center;
@@ -52,12 +56,17 @@
         background-position: -19px -19px;
         box-shadow: inset var(--shadow);
         display:flex;
+        flex-direction: column;
         justify-content: center;
+    }
+    .statement{
+        text-align: center;
+        margin: -3rem 0 1rem 0;
     }
     .layout{
         width:800px;
-         margin: 0 auto;
-          display: flex;
+        margin: 0 auto;
+        display: flex;
     }
     .project-icon{
         width:50px;

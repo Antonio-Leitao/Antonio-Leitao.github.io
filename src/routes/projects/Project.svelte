@@ -3,7 +3,7 @@
     export let url;
     export let icon;
     export let lang;
-    export let pip;
+    export let pip = undefined;
     export let summary= "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.";
     import Icon from "./Icon.svelte";
     import Socials from "./Socials.svelte";
@@ -31,7 +31,6 @@
     .paper{
         position:relative;
         padding:1.3rem 1.5rem;
-        margin-top:1rem;
         /* width:315px; */
         width:280px;
         height:330px; 
