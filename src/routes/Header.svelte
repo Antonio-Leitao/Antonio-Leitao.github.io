@@ -12,8 +12,8 @@
 
 	<nav>
 		<ul>
-			<li aria-current={$page.url.pathname === '/Activity' ? 'page' : undefined}>
-				<a href="/Activity">News</a>
+			<li aria-current={$page.url.pathname === '/About' ? 'page' : undefined}>
+				<a href="/About">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/Publications' ? 'page' : undefined}>
 				<a href="/Publications">Publications</a>
@@ -46,6 +46,7 @@
         width:100%;
         align-items: center;
         padding:1rem 1.5rem;
+      color: var(--base);
     }
     ul{
         list-style: none;

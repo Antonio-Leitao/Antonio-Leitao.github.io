@@ -3,86 +3,86 @@
     export let url;
     export let icon;
     export let lang;
+    export let pip;
     export let summary= "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.";
-    import GithubStats from "./GithubStats.svelte";
     import Icon from "./Icon.svelte";
+    import Socials from "./Socials.svelte";
 </script>
-
-<div class="project" on:click={() => window.open(url, "_blank")}>
+<div class="paper {lang}" on:click={() => window.open(url, "_blank")}>
+{#key icon}
     <div class="project-icon">
         <Icon
             name={icon}
-            color={"#FFF"}
+            color={"#1c2329"}
             opacity={1}
             height={"100%"}
             width={"100%"}
         />
     </div>
-    <div class="project-title">{name}</div>
-    <div class="project-date">{lang.toUpperCase()}</div>
-    <div class="github">
-        <div class="github-number">
-            <GithubStats username={"tauri"} repo={"tauri"}/>
-        </div> Stars 
-        <div class="github-number">
-            3
-        </div> Downloads
-    </div>
-    <div class="project-summary">{summary}</div>
+{/key}
+    <div class="paper-date">{lang}</div>
+    <div class="paper-title">{name}</div>
+    <div class="paper-summary">{summary}</div>
+    <Socials {pip} {url}/>
+    <!-- [![Downloads](https://static.pepy.tech/badge/vlmc)](https://pepy.tech/project/vlmc) -->
 </div>
 
 <style>
-    .project{
+    .paper{
         position:relative;
         padding:1.3rem 1.5rem;
         margin-top:1rem;
-        border-radius: 6px;
-        width:300px;
-        height:264px; 
+        /* width:315px; */
+        width:280px;
+        height:330px; 
         box-shadow:var(--shadow);
         background-color:#fff;
         cursor:pointer;
         transition: all 0.25s ease;
-        border:solid 1px rgb(208, 215, 222);
     }
-    .project:hover{
+    .paper:hover{
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     }
-    .project-date{
-        font-size: 0.8rem;
+    .paper::before{
+        content:"";
+        top:0;
+        left:0;
+        position:absolute;
+        width:100%;
+        height:5px;
     }
     .project-icon{
-        display: grid;
-        place-items:center;
-        padding:0.6rem;
-        border-radius:50%;
-        height:4rem;
-        width:4rem;
-        margin-bottom:0.65rem;
-        background-color:var(--surfaces);
+        height:5rem;
     }
-    .project-title{
-        margin: 0 0 0rem 0;
+    .paper-date{
+        font-size: 0.65rem;
+        font-style:italic;
+        color: var(--subtext);
+    }
+    .paper-title{
+        margin: 0rem 0 0.8rem 0;
         font-family: 'Lora', serif;
         font-size: 1.2rem;
         font-weight:900;
         line-height: 1.6rem;
         color: var(--hover);
     }
-    .project-summary{
+    .paper-summary{
         font-size:0.8rem;
-        margin-top:0.3rem;
         color:var(--muted);
         line-height:1.3rem;
     }
-    .github{
-        position:absolute;
-        bottom:1.3rem;
-        font-size:0.8rem;
-        display:flex;
+    /* topics */
+    .rust::before{
+        background-color: var(--ml-red);
     }
-    .github-number{
-        color:var(--muted);
+    .python::before{
+        background-color: var(--ml-blue);
     }
-
+    .javascript::before{
+        background-color: var(--ml-yellow);
+    }
+    .go::before{
+        background-color: var(--ml-cyan);
+    }
 </style>

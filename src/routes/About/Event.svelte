@@ -6,13 +6,11 @@
 </script>
 
 <div class="topline">
-    {#if link}
+    <div class ="title" >
         <a href={link}>
-            <div class ="title" >{title}</div>
+            {title}
         </a>
-    {:else}
-            <div class ="title" >{title}</div>
-    {/if}
+    </div>
     <div class="date">{date}</div>
 </div>
 {#if summary}
@@ -22,7 +20,9 @@
 <style>
     .title{
         font-size:0.8rem;
-        color:var(--muted);
+        /* color:var(--muted); */
+        color:var(--clr-blue);
+        font-style: bold;
     }
     .date{
         font-size: 0.75em;

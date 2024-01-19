@@ -5,12 +5,12 @@
     const chronoKeys = Object.keys(data.news).reverse();
     let year = chronoKeys[0];
     const typesList = ["paper","talk","code","info"]
-    import Dataview from "./Activity/Dataview.svelte";
+    import Dataview from "./About/Dataview.svelte";
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>António Leitão</title>
+	<meta name="description" content="My homepage" />
 </svelte:head>
 
 <section>
@@ -26,7 +26,7 @@
         I'm a PhD student working on applied algebraic topology and machine learning.
     </span>
     <span>
-        <Button text={"Projects"}/>
+        <Button text={"About"}/>
     </span>
     <div class="scroll">
         Scroll down for news
@@ -57,7 +57,7 @@
 		flex: 0.6;
 	}
     .activity{
-        justify-content: flex-start;
+		justify-content: flex-start;
     }
 	h1 {
 		width: 100%;
@@ -94,7 +94,7 @@
     }
 
     .year {
-        font-size: 0.6em;
+        font-size: 0.7em;
         font-weight: bold;
         margin-bottom: 10px;
         border-bottom: solid 1px rgb(208, 215, 222);

@@ -17,6 +17,7 @@
         cursor: pointer;
         display: grid;
         align-items: center;
+        text-align: center;
     }
     .button:hover{
         background-color:var(--base);

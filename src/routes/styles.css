@@ -64,6 +64,8 @@ body {
 a{
 text-decoration: none;
   color: var(--base);
+    color:inherit;
+
   font-weight:400;
 }
 a:hover{
