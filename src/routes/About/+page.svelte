@@ -4,6 +4,7 @@
     const typesList = ["paper","talk","code","info"]
     let selected_index=0;
     import Dataview from "./Dataview.svelte";
+    import MediaQuery from "../MediaQuery.svelte";
       function scrollIntoView({ target }) {
         selected_index=target.getAttribute('id');
         const el = document.querySelector(target.getAttribute('href'));
@@ -21,16 +22,19 @@
 </svelte:head>
 
 <div class="layout">
-    <div class="placeholder">
-        <div class="buttons">
-            {#each chronoKeys as year,i}
-                <a class = "button" class:selected={selected_index==i} href={"#y" + year} id={i} on:click|preventDefault={scrollIntoView}>
-                    {year}
-                </a>
-            {/each}
-
-        </div>
-    </div>
+    <MediaQuery query="(min-width: 800px)" let:matches>
+        {#if matches}
+            <div class="placeholder">
+                <div class="buttons">
+                    {#each chronoKeys as year,i}
+                        <a class = "button" class:selected={selected_index==i} href={"#y" + year} id={i} on:click|preventDefault={scrollIntoView}>
+                            {year}
+                        </a>
+                    {/each}
+                </div>
+            </div>
+        {/if}
+    </MediaQuery>
     <div class="timeline">
         <div class="about">
             <div class="name">

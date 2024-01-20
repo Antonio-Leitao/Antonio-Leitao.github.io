@@ -57,11 +57,11 @@
         box-shadow: inset var(--shadow);
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .statement{
         text-align: center;
-        margin: -3rem 0 1rem 0;
+        margin: 0rem 0 1rem 0;
     }
     .layout{
         width:800px;
@@ -94,7 +94,7 @@
     .banner{
         /* padding:0 0.5rem; */
         flex: 0 0 60%;
-      min-width: 330px;
+        min-width: 330px;
         display:grid;
         place-items:center;
     }
@@ -105,6 +105,22 @@
         grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
         gap:0.5rem;
         flex: 1;
-      min-width: 0; /* Allow the left column to shrink if needed */
+        min-width: 0; /* Allow the left column to shrink if needed */
+    }
+
+    @media only screen and (max-width: 800px) {
+  /* Your styles for screens 800px or less go here */
+        .layout{
+            flex-direction:column;
+            max-width:400px;
+            margin:0;
+        }
+        .banner{
+            flex:1;
+        }
+        .thumbnails{
+            flex:1;
+            margin-bottom:1rem;
+        }
     }
 </style>

@@ -27,6 +27,7 @@
     .date{
         font-size: 0.75em;
         margin-left:2rem;
+        min-width:3rem;
     }
     .summary{
         font-size:0.8rem;
