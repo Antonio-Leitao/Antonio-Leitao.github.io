@@ -23,7 +23,6 @@
 
 <style>
     .socials{
-        position:absolute;
         bottom:2rem;
         display: flex;
         align-items: center;

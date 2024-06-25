@@ -1,7 +1,6 @@
 <script>
 	import avatar from '$lib/images/avatar_svg.svg';
     import Button from './Button.svelte';
-    export let data;
 </script>
 
 <svelte:head>
@@ -31,7 +30,7 @@
 <style>
 	section {
 		display: flex;
-        min-height: 92vh;
+        min-height: 88vh;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;

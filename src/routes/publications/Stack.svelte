@@ -1,19 +1,17 @@
 <script>
-
+    import Annotated from "./Annotated.svelte";
   function trimElipsis(text) {
-    if (text.length > 60) {
+    if (text.length > 100) {
       text = text.slice(0, 100) + "...";
     }
     return text;
   }
   export let title = "Topological effectivenes of machine learning paradigms";
-  export let stackId;
+  export let published;
+  export let topic;
+  export let highlight;
   export let size = 7;
-  export let image = "";
-  let hasImage = false;
-  if (image) {
-    hasImage = true;
-  }
+  export let url;
   function trimSize(size) {
     if (size > 8) {
       size = Math.floor(3 * Math.log2(size));
@@ -21,14 +19,12 @@
     return size;
   }
 
-  function getRandomNormal(mean, stdDev) {
-    let u1 = 0,
-      u2 = 0;
-    while (u1 === 0) u1 = Math.random();
-    while (u2 === 0) u2 = Math.random();
-    const z0 = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
-    return z0 * stdDev + mean;
-  }
+    function clampValue(value, limit) {
+        if (Math.abs(value) > limit) {
+            return value > 0 ? limit : -limit;
+        }
+        return value;
+    }
   function getTRandomNumber(df) {
     var z1 = Math.random() * 2 - 1; // uniform(-1, 1)
     var z2 = Math.random() * 2 - 1; // uniform(-1, 1)
@@ -40,34 +36,66 @@
     }
     var t = z1 * Math.sqrt(df * (s / (1 - s)));
 
+    t = clampValue(t,7.5);
     return t;
   }
 </script>
 
-<a href={"/stacks/" + stackId} use:link>
+<a href={url} target="_blank">
   <div class="stack">
     {#each { length: trimSize(size) } as _, i}
-      <div class="paper" style="--random:{getTRandomNumber(4)}; --order:{i}" />
+      <div class="paper" style="--random:{getTRandomNumber(3)}; --order:{i}" />
     {/each}
+
     <div
       class="paper"
-      class:image={hasImage}
-      style="--image:url({image});--random:{getTRandomNumber(
-        2
-      )}; --order:{trimSize(size)};"
+      style="--random:{getTRandomNumber(2)}; --order:{trimSize(size)};"
     >
       <div class="cover">
-        <div class="content" class:noborder={hasImage}>
-          <div class="title">{trimElipsis(title)}</div>
-          <div class="count">{size} {size == 1 ? "paper" : "papers"}</div>
+        <div class="content">
+          <div
+            class="title"
+          >
+         <Annotated text={trimElipsis(title)} index={highlight} topic={topic}/>
+          </div>
+          <div class="count">{published}</div>
         </div>
       </div>
       <div />
     </div>
-  </div></a
->
+  </div>
+</a>
 
 <style>
+  .stack {
+      display: grid;
+      place-items: center;
+      /* margin: 1rem; */
+      position: relative;
+      min-width: 10rem;
+      aspect-ratio: 1/1.4;
+    }
+  .paper {
+      position: absolute;
+      top: 0;
+      display: grid;
+      place-items: center;
+      /* border: 1px solid rgba(0, 0, 0, 0.2); */
+      border-radius: 5px;
+      width: 9rem;
+      aspect-ratio: 1/1.4;
+      cursor: pointer;
+      /* Functional props*/
+      --rotation: calc(calc(30deg / -4) + calc(calc(30deg / 25)) * var(--order));
+      transform: rotate(calc(var(--random) * 2deg))
+        translate(calc(var(--order) * -2px), calc(var(--order) * -2px));
+      transform-origin: center;
+      transition: all 0.5s cubic-bezier(0.05, 0.43, 0.25, 0.95);
+      background-color: white;
+      --shadow: calc(var(--order) * 1px);
+      box-shadow: 0px calc(var(--order) * 0.5px) min(var(--shadow), 10px)
+        rgba(0, 0, 0, 0.25);
+    }
   .paper:first-child {
     box-shadow: none;
   }
@@ -84,33 +112,25 @@
   }
   .cover {
     position: absolute;
-    color: var(--text1);
+    color: var(--hover);
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
-  }
-  .image {
-    background-image: var(--image);
-    background-position: center;
-    background-size: cover;
   }
   .content {
     position: absolute;
     width: 92%;
     height: 95%;
     border-radius: 0.15rem;
-    border: 1px lightgray solid;
     padding: 0.25rem;
-  }
-  .noborder {
-    border: none;
   }
   .title {
     font-family: "Lora", serif;
-    font-weight: 500;
-    font-size: 0.95rem;
-    text-align: center;
+    font-weight: 400;
+    font-size: 0.82rem;
+    line-height: 1rem;
+    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;

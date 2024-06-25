@@ -1,5 +1,6 @@
 <script>
-	import Header from './Header.svelte';
+	import Link from './About/Link.svelte';
+import Header from './Header.svelte';
 	import './styles.css';
 </script>
 
@@ -7,7 +8,9 @@
 	<Header />
 	<main>
 		<slot />
-	</main>
+	<footer>
+    <p>Made by <Link text={"António Leitão"} link={"https://antonio-leitao.github.io/"}/></p>
+  </footer></main>
 </div>
 
 <style>
@@ -26,5 +29,11 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
+    footer{
+        width:100%;
+        display: grid;
+        place-items:center;
+        font-size:0.7rem;
+    }
 
 </style>
