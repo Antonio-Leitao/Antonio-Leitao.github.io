@@ -1,6 +1,7 @@
 <script>
 	import avatar from '$lib/images/avatar_svg.svg';
     import Button from './Button.svelte';
+    import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
         I'm a PhD student working on applied algebraic topology and machine learning.
     </span>
     <span>
-        <a href="/About">
+        <a href="{base}/About">
             <Button text={"About"}/>
         </a>
     </span>
