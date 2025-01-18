@@ -4,38 +4,35 @@ github = "https://github.com/antonio-leitao"
 scholar = "https://scholar.google.com/citations?user=kJStlYkAAAAJ&hl=en"
 
 [[papers]]
-title = "Evidence of Social Learning across Cultural Boundaries in Sperm Whales"
+title = "Time-optimal persistent homology representatives for univariate time series"
+url = "https://arxiv.org/abs/2412.08209"
+size = 30
+published = "arXiv 2024"
+topic = "tda"
+
+
+[[papers]]
+title = "Evidence of social learning across cultural boundaries in Sperm Whales"
 url = "https://elifesciences.org/reviewed-preprints/96362"
+size = 32
 published = "eLife 2024"
 topic = "ceti"
-highlight = "9"
-summary = "Using variable length Markov models for modeling whale vocalizaations, we found that clans with geographic proximity exhibit more similar vocal styles, indicating social learning between clans."
 
 [[papers]]
 title = "Topological expressive power of Neural Networks"
 url = "https://openreview.net/forum?id=I44kJPuvqPD"
 published = "NeurIPS 2021"
+size = 10
 topic = "tda"
-highlight = "1"
-summary = "We propose a topological description of neural network expressive power: the topology of the space of decision boundaries realized by a neural architecture."
 
 [[papers]]
 title = "On the Topological Complexity of Decision Boundaries"
 url = "https://meetings3.sis-statistica.org/index.php/sis2021/index/pages/view/book"
 published = "SIS 2020"
+size = 8
 topic = "tda"
-highlight = "2"
-summary = "Classifying two concentric circles is challenging not because they are circles, but because they are concentric. We study and argue that the topology of the decision boundary of a classification problem is the most natural measure of its intrinsic complexity."
 
 ##### PROJECTS #####
-[[projects]]
-name = "Caravela"
-url = "https://github.com/antonio-leitao/caravela"
-icon = "caravela"
-lang = "rust"
-summary = "Fastest Nearest Neighbour search in the seven seas."
-size=0.9
-
 [[projects]]
 name = "Bib"
 url = "https://github.com/antonio-leitao/bib"
@@ -70,21 +67,6 @@ summary = "Fast and efficient Rust implementation of Variable Length Markov Chai
 pip="vlmc"
 size=0.8
 
-[[projects]]
-name = "NAU"
-url = "https://github.com/antonio-leitao/nau"
-icon = "nau"
-lang="go"
-summary = "CLI for side-project management."
-size=0.8
-
-[[projects]]
-name = "Iconography"
-url = "https://github.com/antonio-leitao/iconografia-portuguesa"
-icon = "iconography"
-lang = "javascript"
-summary = "Database of portuguese iconography, before time erases it."
-size=0.6
 
 [[projects]]
 name = "Tiny Docs"

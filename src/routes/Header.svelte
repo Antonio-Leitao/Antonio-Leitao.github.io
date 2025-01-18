@@ -1,12 +1,11 @@
 <script>
 	import { page } from '$app/stores';
 	import avatar from '$lib/images/avatar_svg.svg';
-    import { base } from '$app/paths';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="{base}/">
+		<a href="/">
 			<img src={avatar} alt="SvelteKit" />
 		</a>
 	</div>
@@ -14,13 +13,13 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/About' ? 'page' : undefined}>
-				<a href="{base}/About">About</a>
+				<a href="/About">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/Publications' ? 'page' : undefined}>
-				<a href="{base}/Publications">Publications</a>
+				<a href="/Publications">Publications</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/Projects' ? 'page' : undefined}>
-				<a href="{base}/Projects">Projects</a>
+				<a href="/Projects">Projects</a>
 			</li>
 		</ul>
 	</nav>
